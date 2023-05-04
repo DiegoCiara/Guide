@@ -18,4 +18,5 @@ export const MenuDrawler = styled(DrawlerStyled)`
   padding: 0;
   margin-top: 20px;
   justify-content: start;
+  border: none;
 `;
