@@ -1,14 +1,21 @@
 import { MenuBar, NavBarStyled } from "../../styles/NavBarStyled";
-import Logo from '/src/assets/react.svg'
 import'/src/App.css'
+import { InputSearch } from "../Input";
+import { BsGithub, BsInstagram, BsLinkedin } from "react-icons/bs";
 
 export function NavBar() {
   return(
     <NavBarStyled>
-      <img src={Logo} className="Logo"/>
+      <InputSearch />
+      <MenuBar style={{gap:"20px"}}>
+        <a className="MenuItem Nav" href='/'>Início</a>
+        <a className="MenuItem Nav" href='https://github.com/DiegoCiara/guide' target='_blank' >Configuração</a>
+        <a className="MenuItem Nav" href='https://github.com/DiegoCiara/guide' target='_blank' >Repositório</a>
+      </MenuBar>
       <MenuBar>
-        <p>Item um</p>
-        <p>Item dois</p>
+        <BsInstagram className="MenuItem Nav" href='/'/>
+        <BsLinkedin className="MenuItem Nav" href='/'/>
+        <BsGithub className="MenuItem Nav" href='/'/>
       </MenuBar>
     </NavBarStyled>
   )

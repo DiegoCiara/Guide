@@ -1,30 +1,20 @@
 
 import { useNavigate } from "react-router-dom";
 import { DrawlerStyled, MenuDrawler } from "../../styles/DrawlerStyled";
+import Logo from '/src/assets/react.svg'
 import '/src/App.css';
 
 export function Drawler() {
-  // const navigate = useNavigate()
-    // const navigateCadastroContrato = () => {
-    //   // 👇️ navigate to /contacts
-    //   navigate('/cadastrocontrato');
-    // };
-
-    // const navigateRemessa = () => {
-    //   // 👇️ navigate to /contacts
-    //   navigate('/arquivoremessa');
-    // };
-    // const navigateRetorno = () => {
-    //   // 👇️ navigate to /contacts
-    //   navigate('/arquivoretorno');
-    // };
 
   return(
     <DrawlerStyled>
       <MenuDrawler>
-        <a className="MenuItem"  href="/cadastrocontrato">Cadastro de contrato</a>
-        <a className="MenuItem" href="/arquivoremessa">Arquivo Remessa</a>
-        <a className="MenuItem" href="/arquivoretorno">Arquivo Retorno</a>          
+
+        <div>
+        <img src={Logo} className="Logo"/>
+        </div>
+        <a className="MenuItem"  href="/">Iniciar</a>
+        <a className="MenuItem" href="/example">Arquivo Remessa</a>
       </MenuDrawler>    
     </DrawlerStyled>   
   )

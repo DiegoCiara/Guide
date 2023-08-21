@@ -1,10 +1,8 @@
 #root {
   margin: 0 auto;
-  text-align: center;
 }
 
 .Logo{
-  margin-left: 50px;
   width: auto;
   height: 50px;
 }
@@ -13,7 +11,7 @@
   display: flex;
   align-items: center;
   font-weight: 500;
-  font-size: .875rem;
+  font-size: .975rem;
   transition: 0.2s;
   width: 70%;
   height: 20px;
@@ -27,6 +25,19 @@
 .MenuItem:hover{
   cursor: pointer;
   color: rgb(45, 111, 255);
-  background-color: #e3f2ff;
   transition: 0.2s;
+}
+
+.Nav{
+  padding: auto;
+  text-align: center;
+  justify-content: center;
+  width: auto;
+  font-family: 'Montserrat' ;
+  font-size: 16px;
+  height: auto;
+}
+.Nav:hover{
+  text-decoration: underline;
+  background-color: #e3f2ff;
 }
