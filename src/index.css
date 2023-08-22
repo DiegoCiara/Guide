@@ -22,7 +22,7 @@ body {
 
 /* Estilizando o "polegar" da barra de rolagem (a parte que você arrasta) */
 ::-webkit-scrollbar-thumb {
-  background-color: #dfdfdf; /* Cor do polegar */
+  background-color: #e2e2e2; /* Cor do polegar */
   border-radius: 5px; /* Bordas arredondadas */
 }
 

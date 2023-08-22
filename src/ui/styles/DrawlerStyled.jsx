@@ -32,4 +32,7 @@ export const CardsDrawler = styled(DrawlerStyled)`
   align-items: end;
   width: 50%;
   background-color: transparent;
+  ::-webkit-scrollbar {
+  width: 5px; /* Largura da barra de rolagem */
+}
 `;
