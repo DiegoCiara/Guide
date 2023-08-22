@@ -11,7 +11,7 @@ export const Page = styled(Container)`
     width: 100%;
     height: 100%;
     overflow: hidden;
-    border-right: 1px solid #eeeeee;
+    border-right: 1px solid #5353533e;
     
   @media (max-width: 850px) {
     flex-direction: column-reverse;
@@ -35,7 +35,7 @@ export const PageContainer = styled(Page)`
 `;
 
 export const Divisor = styled.div`
-    width: 80%;
+    width: 100%;
     height: 1px;
     border-top: 1px solid #dddddd;
 `;

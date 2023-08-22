@@ -6,13 +6,13 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;  
   background-color: #ffffff;
+  color: #11181C;
 }
 body {
   margin: 0;
   padding: 0;
   max-width: 100vw;
   max-height: 100vh;
-  color: #11181C;
   font-family: Inter, sans-serif;
 }
 /* Estilizando a barra de rolagem */
@@ -43,4 +43,15 @@ code {
   color: #fff;
   margin-top: 30px;
   max-width: 500px;
+}
+
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color: #ffffff;
+    background-color: #11181C;
+  }
+  a:hover {
+    color: #747bff;
+  }
 }

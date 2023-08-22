@@ -9,14 +9,14 @@ export function Contents(props){
   const NoP = props.p === null;
   const NoSpan = props.span === null;
   const NoCode = props.code === null;
-
+  
   return(
-    <div>
+    <div style={{width:'100%'}}>
       <h1 style={NoH1? {display:"none"}:{display:"flex"}}>{props.h1}</h1>
       <h2 style={NoH2? {display:"none"}:{display:"flex"}}>{props.h2}</h2>
       <h3 style={NoH3? {display:"none"}:{display:"flex"}}>{props.h3}</h3>
       <Divisor style={NoDiv? {display:"none"}:{display:"flex"}}/>
-      <p style={NoP? {display:"none"}:{display:"flex"}}>{props.p}</p>
+      <p  style={NoP? {display:"none"}:{display:"flex", whiteSpace: 'pre-line' }}>{props.p}</p>
       <span style={NoSpan? {display:"none"}:{display:"flex"}}>{props.span}</span>
       <code style={NoCode? {display:"none"}:{display:"flex"}}>{props.code}</code>
     </div>

@@ -4,6 +4,7 @@ import { Contents } from "../ui/components/Contents";
 import { Divisor, Page, PageContainer } from "../ui/styles/Container";
 
 export function Home(){
+  
   return(
     <Page>
       <PageContainer>
