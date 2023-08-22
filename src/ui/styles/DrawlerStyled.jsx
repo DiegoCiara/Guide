@@ -25,8 +25,9 @@ export const MenuDrawler = styled(DrawlerStyled)`
 
 export const CardsDrawler = styled(DrawlerStyled)`
   justify-content: start;
+  padding: 50px;
   height: auto;
   align-items: start;
-  width: 50%;
+  width: 60%;
   background-color: transparent;
 `;

@@ -2,6 +2,11 @@
   margin: 0 auto;
 }
 
+.App{
+  width: 100vw !important;
+  height: 100vh !important;
+  overflow: hidden;
+}
 .Logo{
   width: auto;
   height: 30px;

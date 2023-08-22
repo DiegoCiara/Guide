@@ -6,7 +6,7 @@ export const NavBarStyled = styled.nav`
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  height: 10vh;
+  height: 60px;
   border-bottom: 1px solid #eeeeee;
 `;
 

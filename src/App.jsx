@@ -11,7 +11,7 @@ import { CardsContainer } from './ui/components/CardsContainer'
 
 function App() {
   return (
-    <>
+    <div className='App'>
       <NavBar/>
       <Container>
         <Drawler/>
@@ -26,7 +26,7 @@ function App() {
             <CardsContainer/>
           </Content>
       </Container>
-    </>
+    </div>
   )
 }
 

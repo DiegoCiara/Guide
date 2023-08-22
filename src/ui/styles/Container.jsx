@@ -10,7 +10,7 @@ export const Container = styled.div`
 export const Page = styled(Container)`
     flex-direction: column;
     width:auto;
-    height: 89.9vh;
+    height: 100%;
     overflow: hidden;
 `;
 
