@@ -10,8 +10,21 @@ export const NavBarStyled = styled.nav`
   border-bottom: 1px solid #eeeeee;
 `;
 
+export const HeadBar = styled(NavBarStyled)`
+  width: auto;
+  height: 100%;
+  gap: 30px;
+  @media (max-width: 850px) {
+    margin: 20px !important;
+  }
+`;
 export const MenuBar = styled(NavBarStyled)`
   width: auto;
   height: 100%;
   gap: 30px;
+  
+  @media (max-width: 850px) {
+    display:none;
+  }
+
 `;

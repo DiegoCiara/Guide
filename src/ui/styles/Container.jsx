@@ -8,21 +8,30 @@ export const Container = styled.div`
 `;
 
 export const Page = styled(Container)`
-    flex-direction: column;
-    width:auto;
+    width: 100%;
     height: 100%;
     overflow: hidden;
     border-right: 1px solid #eeeeee;
+    
+  @media (max-width: 850px) {
+    flex-direction: column-reverse;
+  }
+
 `;
 
 export const PageContainer = styled(Page)`
+    flex-direction: column;
     justify-content: start;
     align-items: start;
-    padding: 40px 100px ;
+    padding: 20px 50px ;
     overflow-y: scroll !important;
-    padding-bottom: 0;
     gap: 50px;
-    max-width: 80%;
+    min-width: 50%;
+    width: 100%;
+  @media (max-width: 850px) {
+    padding: 25px;  
+    width: auto;
+    }
 `;
 
 export const Divisor = styled.div`

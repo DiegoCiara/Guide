@@ -1,11 +1,12 @@
 import { ContentCards } from "../../../lables";
-import { CardsDrawler } from "../../styles/DrawlerStyled";
+import { CardsDrawler, CardsList } from "../../styles/DrawlerStyled";
 import { Cards } from "./Cards";
 
 
 export function CardsContainer(){
   return(
     <CardsDrawler>
+      <CardsList>
         {ContentCards.map((card)=>(
           <Cards
             h2={card.title}
@@ -16,6 +17,8 @@ export function CardsContainer(){
             button={card.button}
           />
           ))}
+        
+      </CardsList>
     </CardsDrawler>
   )
 }

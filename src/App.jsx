@@ -7,7 +7,6 @@ import { Home } from './pages/home'
 import { OverView } from './pages/overview'
 import { Container } from './ui/styles/Container'
 import { Content } from './ui/styles/Content'
-import { CardsContainer } from './ui/components/CardsContainer'
 
 function App() {
   return (
@@ -23,7 +22,6 @@ function App() {
                   <Route path="*" element={<Home/>} />
                 </Routes>
             </Router>
-            <CardsContainer/>
           </Content>
       </Container>
     </div>
