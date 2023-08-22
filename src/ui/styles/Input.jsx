@@ -11,6 +11,7 @@ export const InputContainer = styled.div`
   display: flex;
   align-items: center;
   font-family: 'Inter' sans-serif;
+  background-color: #ffff;
   padding-right: 10px;
   border: 1px solid #cacaca;
   border-radius: 4px;

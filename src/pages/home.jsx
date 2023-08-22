@@ -11,6 +11,7 @@ export function Home(){
           h1={card.head}
           h2={card.title}
           h3={card.subtitle}
+          div={card.divisor}
           p={card.paragraph}
           span={card.phrase}
           code={card.code}

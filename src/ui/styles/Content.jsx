@@ -1,10 +1,9 @@
 import styled from "styled-components";
 
 export const Content = styled.div`
-    width: 85vw;
+    width: 100%;
     height: auto;
     display: flex;
-    flex-direction: column;
 `;
 
 export const ContentPage = styled(Content)`

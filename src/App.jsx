@@ -4,25 +4,27 @@ import { Drawler } from './ui/components/Drawler'
 import { Route, Routes, BrowserRouter as Router, 
 } from 'react-router-dom'
 import { Home } from './pages/home'
-import { Example } from './pages/contents/arquivoremessa'
+import { OverView } from './pages/overview'
 import { Container } from './ui/styles/Container'
 import { Content } from './ui/styles/Content'
+import { CardsContainer } from './ui/components/CardsContainer'
 
 function App() {
   return (
     <>
+      <NavBar/>
       <Container>
         <Drawler/>
-        <Content style={{overflowY: "scroll"}}>
-      <NavBar/>
-          <Router>
-              <Routes>
-                <Route path='/' element={<Home/>}/>
-                <Route path='/example' element={<Example/>}/>
-                <Route path="*" element={<Home/>} />
-              </Routes>
-          </Router>
-        </Content>
+          <Content>
+            <Router>
+                <Routes>
+                  <Route path='/' element={<OverView/>}/>
+                  <Route path='/inicio' element={<Home/>}/>
+                  <Route path="*" element={<Home/>} />
+                </Routes>
+            </Router>
+            <CardsContainer/>
+          </Content>
       </Container>
     </>
   )

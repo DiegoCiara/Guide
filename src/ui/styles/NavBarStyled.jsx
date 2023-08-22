@@ -4,13 +4,14 @@ export const NavBarStyled = styled.nav`
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 100%;
-  min-height: 80px;
-  position: relative;
+  height: 10vh;
+  border-bottom: 1px solid #eeeeee;
 `;
 
 export const MenuBar = styled(NavBarStyled)`
-  width: 20%;
-  height: 80%;
+  width: auto;
+  height: 100%;
+  gap: 30px;
 `;

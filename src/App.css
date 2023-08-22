@@ -4,7 +4,7 @@
 
 .Logo{
   width: auto;
-  height: 50px;
+  height: 30px;
 }
 
 .MenuItem{
@@ -16,8 +16,8 @@
   width: 70%;
   height: 20px;
   color: rgb(82, 82, 82);
-  padding: 5%;
-  border-radius: 10px;
+  padding: 10px;
+  border-radius: 5px;
   margin: 2px;
   text-decoration: none;
 }
@@ -37,7 +37,27 @@
   font-size: 16px;
   height: auto;
 }
+
 .Nav:hover{
   text-decoration: underline;
   background-color: #e3f2ff;
+}
+
+.Blue {
+  background-color: #0048fc;
+  color: #ffff;
+}
+.Blue:hover {
+  background-color: #2462ff;
+}
+
+.Icon{
+  width: auto;
+  padding: 4px;
+  border-radius: 4px;
+  background-color: #e3f2ff;
+}
+
+.Row{
+  display: flex;
 }
