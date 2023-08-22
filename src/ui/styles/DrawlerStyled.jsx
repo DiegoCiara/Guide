@@ -6,7 +6,7 @@ export const DrawlerStyled = styled.div`
   align-items: center;
   text-align: left;
   width: 20vw;
-  min-height: 100%;
+  height: 100vw;
   background-color: #F6F6F7;
 `;
 
@@ -25,9 +25,11 @@ export const MenuDrawler = styled(DrawlerStyled)`
 
 export const CardsDrawler = styled(DrawlerStyled)`
   justify-content: start;
-  padding: 50px;
-  height: auto;
-  align-items: start;
-  width: 60%;
+  padding-right: 10px;
+  height: 100%;
+  overflow: hidden;
+  overflow-y: scroll !important;
+  align-items: end;
+  width: 50%;
   background-color: transparent;
 `;

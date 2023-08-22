@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const Content = styled.div`
-    width: 100%;
-    height: auto;
+    width: 70%;
+    max-height: 100%;
     display: flex;
 `;
 

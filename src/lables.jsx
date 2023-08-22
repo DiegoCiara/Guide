@@ -130,4 +130,22 @@ export const ContentCards = [
     button:'Ver repositório',
     link:'/',
   },
+  {
+    title: 'Segundo Card',
+    subtitle: null,
+    divisor: false,
+    paragraph:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium deserunt, dolorem quia sequi fuga modi libero voluptatem eaque dolore aperiam, nemo ab architecto labore ut non autem facilis! Voluptatibus, rem.",
+    phrase:"Funil de vendas simples",
+    button:'Ver repositório',
+    link:'/',
+  },
+  {
+    title: 'Segundo Card',
+    subtitle: null,
+    divisor: false,
+    paragraph:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium deserunt, dolorem quia sequi fuga modi libero voluptatem eaque dolore aperiam, nemo ab architecto labore ut non autem facilis! Voluptatibus, rem.",
+    phrase:"Funil de vendas simples",
+    button:'Ver repositório',
+    link:'/',
+  },
 ]

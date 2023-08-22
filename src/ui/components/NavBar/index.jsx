@@ -14,7 +14,7 @@ export function NavBar() {
         <a className="MenuItem" href='https://github.com/DiegoCiara/guide' target='_blank' >
         <img src={Book} height='30px' className='MenuItem Icon'/>Docs</a>
       </MenuBar>
-      <MenuBar>                    
+      <MenuBar style={{marginRight:'40px'}}>                    
         <a className="MenuItem Nav" href='https://github.com/DiegoCiara/guide' target='_blank' > 
           <AiOutlineStar style={{marginRight:'5px'}}/> Favorite esse repositório</a>
         <div className="Row">
