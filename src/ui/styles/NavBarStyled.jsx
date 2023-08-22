@@ -28,3 +28,11 @@ export const MenuBar = styled(NavBarStyled)`
   }
 
 `;
+export const MenuButton = styled(HeadBar)`
+    display:none;
+    height:auto;
+  @media (max-width: 850px) {
+    display:inline !important;
+  }
+
+`;

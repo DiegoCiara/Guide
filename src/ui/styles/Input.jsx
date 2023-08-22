@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const Input = styled.input`
   outline: none;
   border: none;
+  border-radius: 5px;
   padding: 15px ;
   width: 100%;
 `;
@@ -14,5 +15,5 @@ export const InputContainer = styled.div`
   background-color: #ffff;
   padding-right: 10px;
   border: 1px solid #cacaca;
-  border-radius: 4px;
+  border-radius: 5px;
 `;
