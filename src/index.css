@@ -12,7 +12,7 @@ body {
   padding: 0;
   max-width: 100vw;
   max-height: 100vh;
-  color: #3f3f3f;
+  color: #11181C;
   font-family: Inter, sans-serif;
 }
 /* Estilizando a barra de rolagem */
@@ -34,6 +34,7 @@ body {
 
 h1, h2, h3 {
   font-family: Inter;
+  font-weight: 600;
 }
 code {
   background-color: #3f3f3fbe;

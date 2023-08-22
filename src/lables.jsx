@@ -9,16 +9,16 @@ export const Menu = [
 export const HomePage = [
   {
     head:"Bem vindo ao Projeto",
-    title:"Coloque seu título aqui",
+    title: null,
+    subtitle: null,
     divisor: false,
-    subtitle:"Veja como fica o paragrafo abaixo",
     paragraph:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium deserunt, dolorem quia sequi fuga modi libero voluptatem eaque dolore aperiam, nemo ab architecto labore ut non autem facilis! Voluptatibus, rem.",
     phrase:"Funil de vendas simples",
     code: null,
   },
   {
-    head:"Esse é um container só com o head ",
-    title: null,
+    head: null,
+    title: "Esse é um container só com o head ",
     subtitle: null,
     divisor: false,
     paragraph:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium deserunt, dolorem quia sequi fuga modi libero voluptatem eaque dolore aperiam, nemo ab architecto labore ut non autem facilis! Voluptatibus, rem.",
@@ -137,6 +137,6 @@ export const ContentCards = [
     paragraph:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium deserunt, dolorem quia sequi fuga modi libero voluptatem eaque dolore aperiam, nemo ab architecto labore ut non autem facilis! Voluptatibus, rem.",
     phrase: null,
     button:'Ver repositório',
-    link:'https://vercel.com/diegociara/guide/deployments',
+    link:'/link',
   },
 ]

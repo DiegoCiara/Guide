@@ -29,7 +29,7 @@ export const PageContainer = styled(Page)`
     min-width: 50%;
     width: 100%;
   @media (max-width: 850px) {
-    padding: 25px;  
+    padding: 20px;  
     width: auto;
     }
 `;

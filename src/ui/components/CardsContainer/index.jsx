@@ -14,10 +14,10 @@ export function CardsContainer(){
             div={card.divisor}
             p={card.paragraph}
             span={card.phrase}
+            link={card.link}
             button={card.button}
           />
           ))}
-        
       </CardsList>
     </CardsDrawler>
   )
