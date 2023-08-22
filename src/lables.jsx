@@ -124,10 +124,10 @@ export const ContentCards = [
   {
     title: 'Primeiro Card',
     subtitle: null,
-    divisor: false,
-    paragraph:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium deserunt, dolorem quia sequi fuga modi libero voluptatem eaque dolore aperiam, nemo ab architecto labore ut non autem facilis! Voluptatibus, rem.",
-    phrase:"Funil de vendas simples",
-    button:'Ver repositório',
+    divisor: '',
+    paragraph:`Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium deserunt, dolorem quia sequi fuga modi libero voluptatem eaque dolore aperiam, nemo ab architecto labore ut non autem facilis! Voluptatibus, rem.`,
+    phrase: null ,
+    button: null,
     link:'/',
   },
   {
@@ -135,8 +135,8 @@ export const ContentCards = [
     subtitle: null,
     divisor: false,
     paragraph:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium deserunt, dolorem quia sequi fuga modi libero voluptatem eaque dolore aperiam, nemo ab architecto labore ut non autem facilis! Voluptatibus, rem.",
-    phrase:"Funil de vendas simples",
+    phrase: null,
     button:'Ver repositório',
-    link:'/',
+    link:'https://vercel.com/diegociara/guide/deployments',
   },
 ]

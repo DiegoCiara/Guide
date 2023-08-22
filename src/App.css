@@ -54,6 +54,8 @@
 }
 .Blue:hover {
   background-color: #2462ff;
+  color: #ffff;
+  text-decoration: none;
 }
 
 .Icon{

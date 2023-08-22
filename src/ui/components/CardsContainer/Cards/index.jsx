@@ -15,7 +15,7 @@ return(
       <Divisor style={NoDiv? {display:"none"}:{display:"flex"}}/>
       <p style={NoP? {display:"none"}:{display:"flex"}}>{props.p}</p>
       <span style={NoSpan? {display:"none"}:{display:"flex"}}>{props.span}</span>
-      <a style={NoButton? {display:"none"}:{display:"inherit", border:'1px solid #cacaca'}} href={props.link} target="_blank" className="MenuItem Nav Blue" >{props.button}</a>
+      <a style={NoButton? {display:"none"}:{display:"inherit", border:'1px solid #cacaca'}} href={`${props.link}`} target="_blank" className="MenuItem Nav Blue" >{props.button}</a>
     </Card>
   )
 }
