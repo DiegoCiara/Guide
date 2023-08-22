@@ -8,11 +8,9 @@ export const DrawlerStyled = styled.div`
   width: 25vw;
   height: 80vw;
   background-color: #F6F6F7;
-  
   @media (max-width: 850px) {
    display: none;
   }
-
 `;
 
 export const MenuDrawler = styled(DrawlerStyled)`

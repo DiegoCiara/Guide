@@ -66,3 +66,8 @@
 .Row{
   display: flex;
 }
+
+.ItemMobile{
+  display: none
+}
+
