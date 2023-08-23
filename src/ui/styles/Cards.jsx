@@ -8,5 +8,6 @@ export const Card = styled.div`
   gap: 10px;
   padding: 20px;
   background-color: #0051ff1c;
+  border:1px solid #0051ff76;
   border-radius: 5px;
 `;

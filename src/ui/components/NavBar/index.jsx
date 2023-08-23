@@ -15,16 +15,16 @@ export function NavBar() {
         <img src={isDarkMode? (LogoA):(Logo)} className="Logo"/>
         <MenuBar>          
           <a className="MenuItem" href='https://github.com/DiegoCiara/guide' target='_blank' >
-          <img src={Book} height='30px' className='MenuItem Icon'/>Docs</a>
+          <img src={Book} style={{height:"25px"}} className='MenuItem Icon'/>Docs</a>
         </MenuBar>
       </HeadBar>
       <MenuBar style={{marginRight:'40px'}}>
         <a className="MenuItem Nav" href='https://github.com/DiegoCiara/guide' target='_blank' > 
           <AiOutlineStar style={{marginRight:'5px'}}/> Favorite esse repositório</a>
         <div className="Row">
-          <BsInstagram className="MenuItem Nav" href='/'/>
-          <BsLinkedin className="MenuItem Nav" href='/'/>
-          <BsGithub className="MenuItem Nav" href='/'/>
+          <BsInstagram className="MenuItem Nav" target='_blank' href='https://www.instagram.com/sr.ciara/'/>
+          <BsLinkedin className="MenuItem Nav" target='_blank' href='https://www.linkedin.com/in/diego-antonio-055602249/'/>
+          <BsGithub className="MenuItem Nav" target='_blank' href='https://github.com/DiegoCiara/guide'/>
         </div>
       </MenuBar>
       <MenuButton  style={{marginLeft:'40px'}}>
