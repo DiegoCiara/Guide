@@ -125,7 +125,7 @@ export const ContentCards = [
     title: 'Primeiro Card',
     subtitle: null,
     divisor: '',
-    paragraph:`Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium deserunt, dolorem quia sequi fuga modi libero voluptatem eaque dolore aperiam, nemo ab architecto labore ut non autem facilis! Voluptatibus, rem.`,
+    paragraph:`Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium deserunt, dolorem quia sequi fuga modi.`,
     phrase: null ,
     button: null,
     link:'/',
@@ -134,9 +134,10 @@ export const ContentCards = [
     title: 'Segundo Card',
     subtitle: null,
     divisor: false,
-    paragraph:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium deserunt, dolorem quia sequi fuga modi libero voluptatem eaque dolore aperiam, nemo ab architecto labore ut non autem facilis! Voluptatibus, rem.",
+    paragraph:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium libero voluptatem eaque dolore aperiam.",
     phrase: null,
     button:'Ver repositório',
     link:'/link',
   },
+  // Não ultrapasse o limite de 3 cards
 ]
