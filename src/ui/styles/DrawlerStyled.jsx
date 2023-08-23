@@ -7,7 +7,7 @@ export const DrawlerStyled = styled.div`
   text-align: left;
   width: 25vw;
   height: 80vw;
-  background-color: #F6F6F7;
+  border-right: 1px solid #5353533e;
   @media (max-width: 850px) {
    display: none;
   }

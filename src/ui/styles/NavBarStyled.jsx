@@ -22,6 +22,7 @@ export const MenuBar = styled(NavBarStyled)`
   width: auto;
   height: 100%;
   gap: 30px;
+  border: none;
   @media (max-width: 850px) {
     display:none;
   }

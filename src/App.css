@@ -20,7 +20,7 @@
   transition: 0.2s;
   width: 70%;
   height: 20px;
-  color: rgb(82, 82, 82);
+  color: rgb(125, 125, 125);
   padding: 10px;
   border-radius: 5px;
   margin: 2px;
@@ -63,6 +63,7 @@
   padding: 4px;
   border-radius: 4px;
   background-color: #e3f2ff;
+  margin-right: 8px;
 }
 
 .Row{
@@ -77,4 +78,31 @@
   .ItemMobile{
     display: inline !important;
   }
+}
+
+
+
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color: #ffffff;
+    background-color: #11181C;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  .Icon{
+    background-color: #004cb74b;
+  }
+  .Nav{
+    color: #e3f2ff;
+  }
+  .MenuItem{
+    color: #e3f2ff;
+  }
+  .Nav:hover{
+    color: #e3f2ff;
+    background-color: #00197e85;
+  }
+
 }
