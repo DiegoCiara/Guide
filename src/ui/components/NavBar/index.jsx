@@ -6,6 +6,8 @@ import LogoA from '/src/assets/logo-a.png'
 import Book from '/src/assets/book.svg'
 import'/src/App.css'
 import { useDarkModeDetection } from "../../../Hooks/ThemeHook";
+import Dropdown from "../Dropdown";
+import { Menu } from "../../../lables";
 
 export function NavBar() {
   const isDarkMode = useDarkModeDetection();
@@ -29,8 +31,9 @@ export function NavBar() {
         </div>
       </MenuBar>
       <MenuButton  style={{marginLeft:'40px'}}>
-          <BsList style={{fontSize:'20px'}} className="MenuItem Nav " href='/'/>
+          <Dropdown />
       </MenuButton>
+      
     </NavBarStyled>
   )
 }
