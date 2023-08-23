@@ -22,9 +22,10 @@ export function NavBar() {
         <a className="MenuItem Nav" href='https://github.com/DiegoCiara/guide' target='_blank' > 
           <AiOutlineStar style={{marginRight:'5px'}}/> Favorite esse repositório</a>
         <div className="Row">
-          <BsInstagram className="MenuItem Nav" target='_blank' href='https://www.instagram.com/sr.ciara/'/>
-          <BsLinkedin className="MenuItem Nav" target='_blank' href='https://www.linkedin.com/in/diego-antonio-055602249/'/>
-          <BsGithub className="MenuItem Nav" target='_blank' href='https://github.com/DiegoCiara/guide'/>
+          
+          <a className="MenuItem Nav" target='_blank' href='https://www.instagram.com/sr.ciara/'><BsInstagram/></a>
+          <a className="MenuItem Nav" target='_blank' href='https://www.linkedin.com/in/diego-antonio-055602249/'><BsLinkedin/></a>
+          <a className="MenuItem Nav" target='_blank' href='https://github.com/DiegoCiara/guide'><BsGithub/></a>
         </div>
       </MenuBar>
       <MenuButton  style={{marginLeft:'40px'}}>

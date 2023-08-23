@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Card = styled.div`
   display: flex;
-  width: 250px;
+  width: 220px;
   flex-direction: column;
   justify-content: center;
   gap: 10px;

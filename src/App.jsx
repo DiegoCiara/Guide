@@ -18,7 +18,7 @@ function App() {
             <Router>
                 <Routes>
                   <Route path='/' element={<OverView/>}/>
-                  <Route path='/inicio' element={<Home/>}/>
+                  <Route path='/home' element={<Home/>}/>
                   <Route path="*" element={<Home/>} />
                 </Routes>
             </Router>

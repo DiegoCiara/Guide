@@ -29,9 +29,10 @@ export const MenuDrawler = styled(DrawlerStyled)`
 export const CardsDrawler = styled(DrawlerStyled)`
   justify-content: start;
   height: 90vh;
-  padding: 20px;
+  padding: 10px;
   align-items: start;
-  width: 100%;
+  width: auto;
+  border: none;
   background-color: transparent;
 `; 
 export const CardsList = styled(CardsDrawler)`

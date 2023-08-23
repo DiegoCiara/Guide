@@ -3,6 +3,15 @@ export const Menu = [
     page:'Overview',
     link:'/',
   },
+  {
+    page:'Início',
+    link:'/home',
+  },
+  {
+    page:'Exemplo',
+    link:'/example',
+  },
+  // Certifique-se de configurar uma página e uma rota de cada página
 ];
 
 

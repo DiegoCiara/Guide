@@ -13,8 +13,8 @@ return(
       <h2 style={NoH2? {display:"none"}:{display:"flex", margin:'0'}}>{props.h2}</h2>
       <h3 style={NoH3? {display:"none"}:{display:"flex", margin:'0'}}>{props.h3}</h3>
       <Divisor style={NoDiv? {display:"none"}:{display:"flex"}}/>
-      <p style={NoP? {display:"none"}:{display:"flex"}}>{props.p}</p>
-      <span style={NoSpan? {display:"none"}:{display:"flex"}}>{props.span}</span>
+      <p style={NoP? {display:"none"}:{display:"flex", fontSize:'14px'}}>{props.p}</p>
+      <span style={NoSpan? {display:"none"}:{display:"flex", fontSize:'14px'}}>{props.span}</span>
       <a style={NoButton? {display:"none"}:{display:"inherit", border:'1px solid #cacaca'}} href={`${props.link}`} target="_blank" className="MenuItem Nav Blue" >{props.button}</a>
     </Card>
   )
