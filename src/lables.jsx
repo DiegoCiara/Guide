@@ -8,11 +8,34 @@ export const Menu = [
     link:'/home',
   },
   {
-    page:'Exemplo',
-    link:'/example',
+    page:'Documentação de API',
+    link:'/APIdocument',
   },
   // Certifique-se de configurar uma página e uma rota de cada página
 ];
+
+
+export const ContentCards = [
+  {
+    title: 'Primeiro Card',
+    subtitle: null,
+    divisor: '',
+    paragraph:`Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium deserunt, dolorem quia sequi fuga modi.`,
+    phrase: null ,
+    button: null,
+    link:'/',
+  },
+  {
+    title: 'Segundo Card',
+    subtitle: null,
+    divisor: false,
+    paragraph:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium libero voluptatem eaque dolore aperiam.",
+    phrase: null,
+    button:'Ver repositório',
+    link:'/link',
+  },
+  // Não ultrapasse o limite de 2 cards
+]
 
 
 export const HomePage = [
@@ -128,25 +151,55 @@ export const Overview = [
     code:"docker-compose up-d",
   },
 ];
-
-export const ContentCards = [
+export const Documentation = [
   {
-    title: 'Primeiro Card',
-    subtitle: null,
-    divisor: '',
-    paragraph:`Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium deserunt, dolorem quia sequi fuga modi.`,
-    phrase: null ,
-    button: null,
-    link:'/',
+    head:"Documentação de API",
+    title: null,
+    subtitle: 'Estruture a aplicação para a documentação de sua API',
+    divisor: true,
+    paragraph:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium deserunt, dolorem quia sequi fuga modi libero voluptatem eaque dolore aperiam, nemo ab architecto labore ut non autem facilis! Voluptatibus, rem.",
+    phrase:"Funil de vendas simples",
+    code: null,
+    isCard: null,
   },
   {
-    title: 'Segundo Card',
+    head: null,
+    title: null,
+    subtitle: null,
+    divisor: null,
+    paragraph: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium deserunt, dolorem quia sequi fuga modi libero voluptatem eaque dolore aperiam, nemo ab architecto labore ut non autem facilis! Voluptatibus, rem.',
+    phrase: null,
+    code: 'const typeorm migration:run',
+    isCard: true,
+  },
+  {
+    head:"Bem vindo ao Projeto",
+    title:"Coloque seu título aqui",
+    divisor: false,
+    subtitle:"Veja como fica o paragrafo abaixo",
+    paragraph:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium deserunt, dolorem quia sequi fuga modi libero voluptatem eaque dolore aperiam, nemo ab architecto labore ut non autem facilis! Voluptatibus, rem.",
+    phrase:"Funil de vendas simples",
+    code: null,
+    isCard: null,
+  },
+  {
+    head:"Esse é um container só com o head ",
+    title: null,
     subtitle: null,
     divisor: false,
-    paragraph:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium libero voluptatem eaque dolore aperiam.",
-    phrase: null,
-    button:'Ver repositório',
-    link:'/link',
+    paragraph:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium deserunt, dolorem quia sequi fuga modi libero voluptatem eaque dolore aperiam, nemo ab architecto labore ut non autem facilis! Voluptatibus, rem.",
+    phrase:"Funil de vendas simples",
+    code: null,
+    isCard: null,
   },
-  // Não ultrapasse o limite de 3 cards
-]
+  {
+    head:"Bem vindo ao",
+    title:"Faça a gestão de suas vendas:",
+    subtitle:"Usuário único",
+    divisor: false,
+    paragraph:"Funil de vendas simples",
+    phrase:"Funil de vendas simples",
+    code:"docker-compose up-d",
+    isCard: null,
+  },
+];

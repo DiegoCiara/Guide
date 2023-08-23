@@ -1,14 +1,14 @@
-import { HomePage } from "../lables";
+import { Documentation } from "../lables";
 import { CardsContainer } from "../ui/components/CardsContainer";
 import { Contents } from "../ui/components/Contents";
 import { Divisor, Page, PageContainer } from "../ui/styles/Container";
 
-export function Home(){
+export function Document(){
   
   return(
     <Page>
       <PageContainer>
-          {HomePage.map((card)=>(
+          {Documentation.map((card)=>(
             <Contents
               h1={card.head}
               h2={card.title}
@@ -17,7 +17,6 @@ export function Home(){
               p={card.paragraph}
               span={card.phrase}
               code={card.code}
-              result={card.code}
               card={card.isCard}
             />
             ))}

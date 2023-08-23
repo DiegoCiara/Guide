@@ -39,12 +39,35 @@ h1, h2, h3 {
 code {
   background-color: #3f3f3fbe;
   padding: 20px;
+  position: relative;
+  font-size: 16px;
   border-radius: 4px;
   color: #fff;
   margin-top: 30px;
-  max-width: 500px;
+  max-width: 100%;
 }
-
+.Copy{
+  padding: 10px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  color: rgb(190, 190, 190);
+}
+.Copy:hover{
+  background-color: #11181c67;
+  color: white;
+}
+.Code{
+  left: 0;
+  width: auto;
+}
+.Code:hover{
+  background-color: transparent;
+  color: rgb(190, 190, 190);
+}
 
 @media (prefers-color-scheme: dark) {
   :root {

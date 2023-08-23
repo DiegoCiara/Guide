@@ -43,6 +43,31 @@
   height: auto;
 }
 
+.Card{
+  display: flex;
+  max-width: 90%;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0px;
+  padding: 20px;
+  background-color: #0051ff1c;
+  border:1px solid #0051ff76;
+  border-radius: 5px;
+  padding: 0 auto;
+  padding-bottom: 30px;
+}
+
+.CodeSpace{
+  display: flex;
+  width: 100%;
+  margin: 20px auto;
+  padding-top: 15px;
+  border-radius: 5px;
+  background-color: #090e11;
+  flex-direction: column;
+  position: relative;
+}
+
 .Nav:hover{
   text-decoration: underline;
   background-color: #e3f2ff;
@@ -114,8 +139,6 @@
     display: inline !important;
   }
 }
-
-
 
 @media (prefers-color-scheme: light) {
   .dropdown-options {

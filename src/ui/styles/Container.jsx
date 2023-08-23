@@ -25,7 +25,7 @@ export const PageContainer = styled(Page)`
     align-items: start;
     padding: 20px 50px ;
     overflow-y: scroll !important;
-    gap: 50px;
+    gap: 30px;
     min-width: 50%;
     width: 100%;
   @media (max-width: 850px) {

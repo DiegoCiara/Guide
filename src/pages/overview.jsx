@@ -16,6 +16,7 @@ export function OverView() {
             p={card.paragraph}
             span={card.phrase}
             code={card.code}
+            card={card.isCard}
           />
           ))}
         <div></div>

@@ -7,6 +7,7 @@ import { Home } from './pages/home'
 import { OverView } from './pages/overview'
 import { Container } from './ui/styles/Container'
 import { Content } from './ui/styles/Content'
+import { Document } from './pages/document'
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
                 <Routes>
                   <Route path='/' element={<OverView/>}/>
                   <Route path='/home' element={<Home/>}/>
+                  <Route path='/APIdocument' element={<Document/>}/>
                   <Route path="*" element={<Home/>} />
                 </Routes>
             </Router>
