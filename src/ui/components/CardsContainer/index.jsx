@@ -1,6 +1,6 @@
-import { ContentCards } from "../../../lables";
-import { CardsDrawler, CardsList } from "../../styles/DrawlerStyled";
-import { Cards } from "./Cards";
+import { ContentCards } from "../../../labels";
+import { Cards } from "../Cards";
+import { CardsDrawler, CardsList } from "../Drawler/DrawlerStyled";
 
 
 export function CardsContainer(){

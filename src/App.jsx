@@ -6,7 +6,7 @@ import { Route, Routes, BrowserRouter as Router,
 import { Home } from './pages/home'
 import { OverView } from './pages/overview'
 import { Container } from './ui/styles/Container'
-import { Content } from './ui/styles/Content'
+import { Content } from './ui/components/Contents/ContentStyle'
 import { Document } from './pages/document'
 
 function App() {

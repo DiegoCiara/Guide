@@ -40,6 +40,8 @@ export const ContentCards = [
 
 export const HomePage = [
   {
+    isCard: null,
+    icon: null,
     head:"Bem vindo ao Projeto",
     title: null,
     subtitle: null,
@@ -49,6 +51,8 @@ export const HomePage = [
     code: null,
   },
   {
+    isCard: null,
+    icon: null,
     head: null,
     title: "Esse é um container só com o head ",
     subtitle: null,
@@ -58,6 +62,8 @@ export const HomePage = [
     code: null,
   },
   {
+    isCard: null,
+    icon: null,
     head:"Bem vindo ao",
     title:"Faça a gestão de suas vendas:",
     subtitle:"Usuário único",
@@ -67,6 +73,8 @@ export const HomePage = [
     code:"docker-compose up-d",
   },
   {
+    isCard: null,
+    icon: null,
     head:"Bem vindo ao Projeto",
     title:"Coloque seu título aqui",
     divisor: false,
@@ -76,6 +84,8 @@ export const HomePage = [
     code: null,
   },
   {
+    isCard: null,
+    icon: null,
     head:"Esse é um container só com o head ",
     title: null,
     subtitle: null,
@@ -85,6 +95,8 @@ export const HomePage = [
     code: null,
   },
   {
+    isCard: null,
+    icon: null,
     head:"Bem vindo ao",
     title:"Faça a gestão de suas vendas:",
     subtitle:"Usuário único",
@@ -97,6 +109,8 @@ export const HomePage = [
 
 export const Overview = [
   {
+    isCard: null,
+    icon: null,
     head:"OverView",
     title:"Coloque seu título aqui",
     divisor: false,
@@ -106,6 +120,8 @@ export const Overview = [
     code: null,
   },
   {
+    isCard: null,
+    icon: null,
     head:"Esse é um container só com o head ",
     title: null,
     subtitle: null,
@@ -115,6 +131,8 @@ export const Overview = [
     code: null,
   },
   {
+    isCard: null,
+    icon: null,
     head:"Bem vindo ao",
     title:"Faça a gestão de suas vendas:",
     subtitle:"Usuário único",
@@ -124,6 +142,8 @@ export const Overview = [
     code:"docker-compose up-d",
   },
   {
+    isCard: null,
+    icon: null,
     head:"Bem vindo ao Projeto",
     title:"Coloque seu título aqui",
     divisor: false,
@@ -133,6 +153,8 @@ export const Overview = [
     code: null,
   },
   {
+    isCard: null,
+    icon: null,
     head:"Esse é um container só com o head ",
     title: null,
     subtitle: null,
@@ -142,6 +164,8 @@ export const Overview = [
     code: null,
   },
   {
+    isCard: null,
+    icon: null,
     head:"Bem vindo ao",
     title:"Faça a gestão de suas vendas:",
     subtitle:"Usuário único",
@@ -153,6 +177,8 @@ export const Overview = [
 ];
 export const Documentation = [
   {
+    isCard: null,
+    icon: null,
     head:"Documentação de API",
     title: null,
     subtitle: 'Estruture a aplicação para a documentação de sua API',
@@ -160,46 +186,49 @@ export const Documentation = [
     paragraph:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium deserunt, dolorem quia sequi fuga modi libero voluptatem eaque dolore aperiam, nemo ab architecto labore ut non autem facilis! Voluptatibus, rem.",
     phrase:"Funil de vendas simples",
     code: null,
-    isCard: null,
   },
   {
+    isCard: true,
+    icon: 'fa fa-circle-info',
     head: null,
-    title: null,
+    title: 'Trabalhando com cards',
     subtitle: null,
     divisor: null,
     paragraph: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium deserunt, dolorem quia sequi fuga modi libero voluptatem eaque dolore aperiam, nemo ab architecto labore ut non autem facilis! Voluptatibus, rem.',
     phrase: null,
     code: 'const typeorm migration:run',
-    isCard: true,
   },
   {
-    head:"Bem vindo ao Projeto",
-    title:"Coloque seu título aqui",
-    divisor: false,
-    subtitle:"Veja como fica o paragrafo abaixo",
-    paragraph:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium deserunt, dolorem quia sequi fuga modi libero voluptatem eaque dolore aperiam, nemo ab architecto labore ut non autem facilis! Voluptatibus, rem.",
-    phrase:"Funil de vendas simples",
-    code: null,
     isCard: null,
-  },
-  {
-    head:"Esse é um container só com o head ",
+    icon: null,
+    head: 'Inserindo códigos',
     title: null,
-    subtitle: null,
-    divisor: false,
-    paragraph:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium deserunt, dolorem quia sequi fuga modi libero voluptatem eaque dolore aperiam, nemo ab architecto labore ut non autem facilis! Voluptatibus, rem.",
-    phrase:"Funil de vendas simples",
-    code: null,
-    isCard: null,
+    subtitle: "Veja como você pode inserir um modelo Json no codespace no exemplo abaixo",
+    divisor: null,
+    paragraph:"Acessando o arquivo labels.jsx, você pode visualizar um modelo de um arquivo .json escrito para essa documentação, ao você inserir as chaves `{ } com o conteudo dentro, o Guide irá reconhecer que o código que você inseriu é do tipo Json`",
+    phrase: 'Inserindo o código, o codespace irá retornar o resultado abaixo:',
+    code:`const`,
   },
   {
-    head:"Bem vindo ao",
-    title:"Faça a gestão de suas vendas:",
-    subtitle:"Usuário único",
-    divisor: false,
-    paragraph:"Funil de vendas simples",
-    phrase:"Funil de vendas simples",
-    code:"docker-compose up-d",
     isCard: null,
+    icon: null,
+    head: null,
+    title: 'Inserindo comandos de terminal',
+    subtitle: "Veja como você pode inserir um modelo Json no codespace no exemplo abaixo",
+    divisor: null,
+    paragraph:"Acessando o arquivo labels.jsx, você pode visualizar um modelo de um arquivo .json escrito para essa documentação, ao você inserir as chaves `{ } com o conteudo dentro, o Guide irá reconhecer que o código que você inseriu é do tipo Json`",
+    phrase: 'Inserindo o código, o codespace irá retornar o resultado abaixo:',
+    code:`{ \n \ node:{\n \ \ yarn,\n \ \ vim,\n \ } \n}`,
+  },
+  {
+    isCard: null,
+    icon: null,
+    head: null,
+    title: 'Inserindo formatos .json',
+    subtitle: "Veja como você pode inserir um modelo Json no codespace no exemplo abaixo",
+    divisor: null,
+    paragraph:"Acessando o arquivo labels.jsx, você pode visualizar um modelo de um arquivo .json escrito para essa documentação, ao você inserir as chaves `{ } com o conteudo dentro, o Guide irá reconhecer que o código que você inseriu é do tipo Json`",
+    phrase: 'Inserindo o código, o codespace irá retornar o resultado abaixo:',
+    code:`{ \n \ node:{\n \ \ yarn,\n \ \ vim,\n \ } \n}`,
   },
 ];

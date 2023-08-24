@@ -1,6 +1,6 @@
 
-import { Menu } from "../../../lables";
-import { DrawlerStyled, MenuDrawler } from "../../styles/DrawlerStyled";
+import { Menu } from "../../../labels";
+import { DrawlerStyled, MenuDrawler } from "./DrawlerStyled";
 import { InputSearch } from "../Input";
 import '/src/App.css';
 

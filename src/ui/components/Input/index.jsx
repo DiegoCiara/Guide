@@ -1,4 +1,4 @@
-import { Input, InputContainer } from "../../styles/Input";
+import { Input, InputContainer } from "./InputStyle";
 import { BsSearch } from 'react-icons/bs'
 
 export function InputSearch(props){

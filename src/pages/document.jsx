@@ -1,4 +1,4 @@
-import { Documentation } from "../lables";
+import { Documentation } from "../labels";
 import { CardsContainer } from "../ui/components/CardsContainer";
 import { Contents } from "../ui/components/Contents";
 import { Divisor, Page, PageContainer } from "../ui/styles/Container";
@@ -18,6 +18,7 @@ export function Document(){
               span={card.phrase}
               code={card.code}
               card={card.isCard}
+              icon={card.icon}
             />
             ))}
         <div></div>

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import '/src/App.css';
-import { Menu } from '../../../lables';
+import { Menu } from '../../../labels';
 import { BsGithub, BsInstagram, BsLinkedin, BsList } from 'react-icons/bs';
 import { Divisor } from '../../styles/Container';
 import { InputSearch } from '../Input';

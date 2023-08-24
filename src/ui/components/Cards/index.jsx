@@ -1,5 +1,5 @@
-import { Card } from "../../../styles/Cards"
-import { Divisor } from "../../../styles/Container";
+import { Divisor } from "../../styles/Container";
+import { Card } from "./CardsStyle"
 
 export const Cards = (props) =>{
   const NoH2 = props.h2 === null;

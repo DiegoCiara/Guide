@@ -36,6 +36,9 @@ h1, h2, h3 {
   font-family: Inter;
   font-weight: 600;
 }
+h3{
+  margin-top: 0;
+}
 code {
   background-color: #3f3f3fbe;
   padding: 20px;

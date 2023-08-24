@@ -1,4 +1,4 @@
-import { HomePage } from "../lables";
+import { HomePage } from "../labels";
 import { CardsContainer } from "../ui/components/CardsContainer";
 import { Contents } from "../ui/components/Contents";
 import { Divisor, Page, PageContainer } from "../ui/styles/Container";
@@ -17,6 +17,7 @@ export function Home(){
               p={card.paragraph}
               span={card.phrase}
               code={card.code}
+              icon={card.icon}
               result={card.code}
               card={card.isCard}
             />

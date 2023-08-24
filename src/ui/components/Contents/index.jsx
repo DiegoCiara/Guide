@@ -1,12 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Divisor } from "../../styles/Container";
-import { CopyToClipboard } from 'react-copy-to-clipboard';
-import { MdContentCopy } from 'react-icons/md'
+import { CodeSpace } from '../CodeSpace';
 import '/src/App.css'
 
-
 export function Contents(props){
-  
+
   const NoH1 = props.h1 === null;
   const NoH2 = props.h2 === null;
   const NoH3 = props.h3 === null;
@@ -15,53 +13,23 @@ export function Contents(props){
   const NoSpan = props.span === null;
   const NoCode = props.code === null;
   const NoCard = props.card === null;
+  const NoIcon = props.icon === null;
 
-  function CopyClipboardExample() {
-    const [copied, setCopied] = useState(false);
-
-    function checkString(input) {
-      if(input === null)
-        return ''
-        const terminalKeywords = ['npm', 'yarn', 'pip', 'docker-compose', 'sudo']
-        if (terminalKeywords.some(item => input.includes(item))) {
-          return 'Terminal';
-        }else{
-          return 'Código'
-        }
-    }
-    const KeyDetect = props.code;
-    console.log(KeyDetect)
-    const KeyDetected = checkString(KeyDetect)
-    const handleCopy = () => {
-      setCopied(true);
-      setTimeout(() => {
-        setCopied(false);
-      }, 1500); 
-    };
-    return (
-      <div className='CodeSpace'>
-        <CopyToClipboard text={KeyDetect}>
-          <button className='MenuItem Copy Nav' style={{zIndex:'1'}} onClick={handleCopy}>
-            <MdContentCopy/>
-            {copied ? 'Copiado!' : 'Copiar'}
-          </button>
-        </CopyToClipboard>
-        <span className='Copy Code'>{KeyDetected}</span>
-          <code>{KeyDetect}
-          </code>
-      </div >
-    );
-  }
   return(
     <div className={NoCard? (''):('Card')} style={{width:'100%'}}>
-      <h1 style={NoH1? {display:"none"}:{display:"flex"}}>{props.h1}</h1>
-      <h2 style={NoH2? {display:"none"}:{display:"flex"}}>{props.h2}</h2>
+      <div style={{display:'flex', alignItems:'center', gap:'15px'}}>
+        <i style={NoIcon? {display:"none"}:{display:"flex", color:'#1C274C', fontSize:'25px'}} className={props.icon}></i>
+        <div style={{margin:'0', height:'auto', width:'auto'}}>
+          <h1 style={NoH1? {display:"none"}:{display:"flex"}}>{props.h1}</h1>
+          <h2 style={NoH2? {display:"none"}:{display:"flex"}}>{props.h2}</h2>
+        </div>
+      </div>
       <h3 style={NoH3? {display:"none"}:{display:"flex"}}>{props.h3}</h3>
       <Divisor style={NoDiv? {display:"none"}:{display:"flex"}}/>
       <p  style={NoP? {display:"none"}:{display:"flex", whiteSpace: 'pre-line' }}>{props.p}</p>
       <span style={NoSpan? {display:"none"}:{display:"flex"}}>{props.span}</span>
       <div style={NoCode? {display:"none"}:{display:"flex", width:'100%'}}>
-        <CopyClipboardExample />
+        <CodeSpace code={props.code} />
       </div>
     </div>
   )
