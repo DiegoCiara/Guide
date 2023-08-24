@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { CodeSpaceStyle } from "../Contents/ContentStyle";
+import { CodeSpaceStyle } from "./CodeSpaceStyle";
 import { checkString } from "../../../global/context";
 import CopyToClipboard from "react-copy-to-clipboard";
 import { MdContentCopy } from 'react-icons/md'

@@ -15,21 +15,19 @@ body {
   max-height: 100vh;
   font-family: Inter, sans-serif;
 }
-/* Estilizando a barra de rolagem */
+
 ::-webkit-scrollbar {
-  width: 7px; /* Largura da barra de rolagem */
+  width: 7px; 
 }
 
-/* Estilizando o "polegar" da barra de rolagem (a parte que você arrasta) */
 ::-webkit-scrollbar-thumb {
-  background-color: #e2e2e2; /* Cor do polegar */
-  border-radius: 5px; /* Bordas arredondadas */
+  background-color: #e2e2e2;
+  border-radius: 5px; 
 }
 
-/* Estilizando a pista da barra de rolagem (área ao redor do polegar) */
 ::-webkit-scrollbar-track {
-  background-color: transparent; /* Cor da pista */
-  border-radius: 5px; /* Bordas arredondadas */
+  background-color: transparent; 
+  border-radius: 5px;
 }
 
 h1, h2, h3 {
@@ -38,6 +36,9 @@ h1, h2, h3 {
 }
 h3{
   margin-top: 0;
+}
+p{
+  white-space: pre-line;
 }
 code {
   background-color: #3f3f3fbe;

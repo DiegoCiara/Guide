@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import '/src/App.css';
-import { Menu } from '../../../labels';
+import { Routes } from '../../../labels';
 import { BsGithub, BsInstagram, BsLinkedin, BsList } from 'react-icons/bs';
 import { Divisor } from '../../styles/Container';
 import { InputSearch } from '../Input';
@@ -33,7 +33,7 @@ const Dropdown = () => {
         </div>
         <Divisor style={{marginBottom:'10px'}}/>
         <InputSearch/>
-          {Menu.map((pages)=>(
+          {Routes.map((pages)=>(
             <a className="MenuItem"  href={pages.link}>{pages.page}</a>
             ))}        
           </div>

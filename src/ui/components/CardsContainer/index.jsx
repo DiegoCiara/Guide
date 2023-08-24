@@ -1,14 +1,14 @@
 import { ContentCards } from "../../../labels";
-import { Cards } from "../Cards";
+import { SideCards } from "../Cards/Cards";
 import { CardsDrawler, CardsList } from "../Drawler/DrawlerStyled";
 
 
-export function CardsContainer(){
+export function DrawlerCards(){
   return(
     <CardsDrawler>
       <CardsList>
         {ContentCards.map((card)=>(
-          <Cards
+          <SideCards
             h2={card.title}
             h3={card.subtitle}
             div={card.divisor}

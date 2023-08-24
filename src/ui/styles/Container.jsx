@@ -15,13 +15,24 @@ export const Page = styled(Container)`
       flex-direction: column-reverse;
     }
 `;
+export const Content = styled.div`
+    width: 100%;
+    max-height: 100%;
+    display: flex;
+`;
+
+export const ContentPage = styled(Content)`
+    max-width: 100%;
+    padding: 20px;
+    text-align: left;
+    width: 100%;
+`;
 export const PageContainer = styled(Page)`
     flex-direction: column;
     justify-content: start;
     align-items: start;
     padding: 20px 50px ;
     overflow-y: scroll !important;
-    gap: 30px;
     min-width: 50%;
     width: 100%;
     @media (max-width: 850px) {

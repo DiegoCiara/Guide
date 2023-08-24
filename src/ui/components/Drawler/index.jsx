@@ -1,8 +1,7 @@
-
-import { Menu } from "../../../labels";
 import { DrawlerStyled, MenuDrawler } from "./DrawlerStyled";
 import { InputSearch } from "../Input";
 import '/src/App.css';
+import { Routes } from "../../../labels";
 
 export function Drawler() {
 
@@ -11,9 +10,9 @@ export function Drawler() {
       <MenuDrawler>
         <InputSearch/>
         <div style={{marginTop:'20px', width:'100%'}}>
-        {Menu.map((pages)=>(
-          <a className="MenuItem"  href={pages.link}>{pages.page}</a>
-          ))}
+          {Routes.map((pages)=>(
+            <a className="MenuItem"  href={pages.link}>{pages.page}</a>
+            ))}
         </div>
       </MenuDrawler>    
     </DrawlerStyled>   

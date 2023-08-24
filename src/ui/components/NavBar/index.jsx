@@ -7,7 +7,6 @@ import Book from '/src/assets/book.svg'
 import'/src/App.css'
 import { useDarkModeDetection } from "../../../global/hooks/ThemeHook";
 import Dropdown from "../Dropdown";
-import { Menu } from "../../../labels";
 
 export function NavBar() {
   const isDarkMode = useDarkModeDetection();

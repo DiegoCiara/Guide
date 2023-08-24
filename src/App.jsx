@@ -3,13 +3,12 @@ import { NavBar } from './ui/components/NavBar'
 import { Drawler } from './ui/components/Drawler'
 import { Route, Routes, BrowserRouter as Router, 
 } from 'react-router-dom'
-import { Home } from './pages/home'
-import { OverView } from './pages/overview'
-import { Container } from './ui/styles/Container'
-import { Content } from './ui/components/Contents/ContentStyle'
-import { Document } from './pages/document'
+import { Container, Content } from './ui/styles/Container'
+import { Pages } from './labels'
+import { DynamicPage } from './pages/DynamicPage'
 
 function App() {
+
   return (
     <div className='App'>
       <NavBar/>
@@ -18,10 +17,12 @@ function App() {
           <Content>
             <Router>
                 <Routes>
-                  <Route path='/' element={<OverView/>}/>
-                  <Route path='/home' element={<Home/>}/>
-                  <Route path='/APIdocument' element={<Document/>}/>
-                  <Route path="*" element={<Home/>} />
+                  {Pages.map(route => (
+                    <Route
+                      key={route.id}
+                      path={route.path}
+                      element={<DynamicPage route={route} />}
+                    />))}
                 </Routes>
             </Router>
           </Content>
