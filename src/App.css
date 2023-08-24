@@ -43,6 +43,11 @@
   height: auto;
 }
 
+.Icon{
+  color:#1C274C;
+   font-size: 25px
+}
+
 .Card{
   display: flex;
   max-width: 90%;
@@ -165,5 +170,8 @@
   .Nav:hover{
     color: #e3f2ff;
     background-color: #00197e85;
+  }
+  .Icon{
+    color: #e3f2ff;
   }
 }

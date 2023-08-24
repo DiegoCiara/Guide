@@ -18,7 +18,7 @@ export function Contents(props){
   return(
     <div className={NoCard? (''):('Card')} style={{width:'100%'}}>
       <div style={{display:'flex', alignItems:'center', gap:'15px'}}>
-        <i style={NoIcon? {display:"none"}:{display:"flex", color:'#1C274C', fontSize:'25px'}} className={props.icon}></i>
+        <i style={NoIcon? {display:"none"}:{display:"flex"}} className={`${props.icon} Icon`}></i>
         <div style={{margin:'0', height:'auto', width:'auto'}}>
           <h1 style={NoH1? {display:"none"}:{display:"flex"}}>{props.h1}</h1>
           <h2 style={NoH2? {display:"none"}:{display:"flex"}}>{props.h2}</h2>
