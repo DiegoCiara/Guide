@@ -16,7 +16,6 @@ export function Contents(props){
   const NoCode = props.code === null;
   const NoCard = props.card === null;
 
-  
   function CopyClipboardExample() {
     const [copied, setCopied] = useState(false);
 
@@ -30,12 +29,9 @@ export function Contents(props){
           return 'Código'
         }
     }
-    
     const KeyDetect = props.code;
-
     console.log(KeyDetect)
     const KeyDetected = checkString(KeyDetect)
-
     const handleCopy = () => {
       setCopied(true);
       setTimeout(() => {
@@ -44,20 +40,18 @@ export function Contents(props){
     };
     return (
       <div className='CodeSpace'>
-        <CopyToClipboard text={props.code}>
-          <button className='MenuItem Copy Nav' onClick={handleCopy}>
+        <CopyToClipboard text={KeyDetect}>
+          <button className='MenuItem Copy Nav' style={{zIndex:'1'}} onClick={handleCopy}>
             <MdContentCopy/>
             {copied ? 'Copiado!' : 'Copiar'}
           </button>
         </CopyToClipboard>
         <span className='Copy Code'>{KeyDetected}</span>
-          <code>{props.code}
+          <code>{KeyDetect}
           </code>
       </div >
     );
   }
-
-  
   return(
     <div className={NoCard? (''):('Card')} style={{width:'100%'}}>
       <h1 style={NoH1? {display:"none"}:{display:"flex"}}>{props.h1}</h1>
