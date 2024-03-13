@@ -1,7 +1,8 @@
 
-import { Menu } from "../../../labels";
+import { Menu, Pages } from "../../../labels";
 import { DrawlerStyled, MenuDrawler } from "./DrawlerStyled";
 import { InputSearch } from "../Input";
+import { formatUrl } from "../../../utils/formats";
 import '/src/App.css';
 
 export function Drawler() {
@@ -11,9 +12,9 @@ export function Drawler() {
       <MenuDrawler>
         <InputSearch/>
         <div style={{marginTop:'20px', width:'100%'}}>
-        {Menu.map((pages)=>(
-          <a className="MenuItem"  href={pages.link}>{pages.page}</a>
-          ))}
+          {Pages.map((pages)=>(
+              <a className="MenuItem" href={formatUrl(pages?.page)}>{pages.page}</a>
+          ))}    
         </div>
       </MenuDrawler>    
     </DrawlerStyled>   

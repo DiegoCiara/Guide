@@ -3,12 +3,12 @@ import { CardsContainer } from "../ui/components/CardsContainer";
 import { Contents } from "../ui/components/Contents";
 import { Divisor, Page, PageContainer } from "../ui/styles/Container";
 
-export function Document(){
+export function Document({ contents }){
   
   return(
     <Page>
       <PageContainer>
-          {Documentation.map((card)=>(
+          {contents.map((card)=>(
             <Contents
               h1={card.head}
               h2={card.title}

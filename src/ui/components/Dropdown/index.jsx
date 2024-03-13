@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import '/src/App.css';
-import { Menu } from '../../../labels';
+import { Menu, Pages } from '../../../labels';
 import { BsGithub, BsInstagram, BsLinkedin, BsList } from 'react-icons/bs';
 import { Divisor } from '../../styles/Container';
 import { InputSearch } from '../Input';
+import { formatUrl } from '../../../utils/formats';
 
 const Dropdown = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -33,8 +34,8 @@ const Dropdown = () => {
         </div>
         <Divisor style={{marginBottom:'10px'}}/>
         <InputSearch/>
-          {Menu.map((pages)=>(
-            <a className="MenuItem"  href={pages.link}>{pages.page}</a>
+          {Pages.map((pages)=>(
+            <a className="MenuItem"  href={formatUrl(pages?.page)}>{pages.page}</a>
             ))}        
           </div>
     </div>
