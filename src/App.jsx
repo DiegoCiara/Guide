@@ -10,8 +10,32 @@ import { Content } from './ui/components/Contents/ContentStyle'
 import { Document } from './pages/document'
 import { Pages } from './labels'
 import { formatUrl } from './utils/formats'
+import { useEffect, useState } from 'react'
+import ProductService from './services/ProductService'
 
 function App() {
+
+  const [products, setProducts] = useState([]);
+  
+  useEffect(() => {
+    getProducts()
+  },[])
+
+
+  const getProducts = async () => {
+    // setLoading(true);
+    try {
+      const data = await ProductService.getProducts();
+      setProducts(data);
+      // setLoading(false);
+    } catch (err) {
+      console.log(err)
+      // setLoading(false);
+      // setError(
+      //   "Não foi possivel buscar canais de vendas, verifique sua conexão e tente novamente"
+      // );
+    }
+  };
   return (
     <div className='App'>
       <NavBar/>
@@ -20,10 +44,10 @@ function App() {
           <Content>
             <Router>
                 <Routes>
-                  {Pages.map((e) => (
-                    <Route path={formatUrl(e?.page)} element={<Document contents={e?.content}/>}/>
+                  {products?.map((e) => (
+                    <Route path={formatUrl(e?.name)} element={<Document id={e?.id}/>}/>
                   ))}
-                    <Route path={"/"} element={<Document contents={Pages[0]?.content}/>}/>
+                    <Route path={"/"} element={<Document contents={products[0]?.content}/>}/>
                   {/* <Route path='/home' element={<Home/>}/> */}
                   {/* <Route path='/APIdocument' element={}/> */}
                   <Route path="*" element={<Home/>} />

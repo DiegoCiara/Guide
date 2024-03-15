@@ -1,14 +1,20 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import '/src/App.css';
 import { Menu, Pages } from '../../../labels';
 import { BsGithub, BsInstagram, BsLinkedin, BsList } from 'react-icons/bs';
 import { Divisor } from '../../styles/Container';
 import { InputSearch } from '../Input';
 import { formatUrl } from '../../../utils/formats';
+import ProductService from '../../../services/ProductService';
 
 const Dropdown = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedOption, setSelectedOption] = useState(null);
+  const [products, setProducts] = useState([]);
+  
+  useEffect(() => {
+    getProducts()
+  },[])
 
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
@@ -17,6 +23,22 @@ const Dropdown = () => {
   const handleOptionClick = (option) => {
     setSelectedOption(option);
     setIsOpen(false);
+  };
+
+
+  const getProducts = async () => {
+    // setLoading(true);
+    try {
+      const data = await ProductService.getProducts();
+      setProducts(data);
+      // setLoading(false);
+    } catch (err) {
+      console.log(err)
+      // setLoading(false);
+      // setError(
+      //   "Não foi possivel buscar canais de vendas, verifique sua conexão e tente novamente"
+      // );
+    }
   };
 
   return (
@@ -34,8 +56,8 @@ const Dropdown = () => {
         </div>
         <Divisor style={{marginBottom:'10px'}}/>
         <InputSearch/>
-          {Pages.map((pages)=>(
-            <a className="MenuItem"  href={formatUrl(pages?.page)}>{pages.page}</a>
+          {products.map((pages)=>(
+            <a className="MenuItem"  href={formatUrl(pages?.name)}>{pages.name}</a>
             ))}        
           </div>
     </div>
