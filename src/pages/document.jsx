@@ -53,6 +53,7 @@ export function Document({ id }){
               code={card.code}
               card={card.isCard}
               icon={card.icon}
+              divisor={card.divisor}
             />
             ))}
         <div></div>

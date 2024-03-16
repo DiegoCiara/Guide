@@ -18,7 +18,7 @@ export function Contents(props) {
         </div>
       </div>
       {shouldDisplay(props.h3) && <h3>{props.h3}</h3>}
-      {props.divisor && <Divisor />} {/* Diretamente verifica o valor booleano */}
+      {props.divisor ? <Divisor /> : null} {/* Diretamente verifica o valor booleano */}
       {shouldDisplay(props.p) && <p style={{whiteSpace: 'pre-line'}}>{props.p}</p>}
       {shouldDisplay(props.span) && <span>{props.span}</span>}
       {shouldDisplay(props.code) && 
