@@ -39,65 +39,65 @@ export const ContentCards = [
 
 
 export const Pages = [
-  {
-    page: 'Wellcome',
-    content:[
-      {
-        isCard: null,
-        icon: null,
-        head:"Bem vindo ao Projeto",
-        title: null,
-        subtitle: null,
-        divisor: false,
-        paragraph:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium deserunt, dolorem quia sequi fuga modi libero voluptatem eaque dolore aperiam, nemo ab architecto labore ut non autem facilis! Voluptatibus, rem. \n\nLorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium deserunt, dolorem quia sequi fuga modi libero voluptatem eaque dolore aperiam, nemo ab architecto labore ut non autem facilis! Voluptatibus, rem.",
-        phrase:"Funil de vendas simples",
-        code: null,
-      },
-      {
-        isCard: null,
-        icon: null,
-        head:"OverView",
-        title:"Coloque seu título aqui",
-        divisor: false,
-        subtitle:"Veja como fica o paragrafo abaixo",
-        paragraph:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium deserunt, dolorem quia sequi fuga modi libero voluptatem eaque dolore aperiam, nemo ab architecto labore ut non autem facilis! Voluptatibus, rem.",
-        phrase:"Funil de vendas simples",
-        code: null,
-      },
-    ]
-  },
-  {
-    page: 'OverView',
-    content:[
-      {
-        isCard: null,
-        icon: null,
-        head:"OverView",
-        title:"Coloque seu título aqui",
-        divisor: false,
-        subtitle:"Veja como fica o paragrafo abaixo",
-        paragraph:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium deserunt, dolorem quia sequi fuga modi libero voluptatem eaque dolore aperiam, nemo ab architecto labore ut non autem facilis! Voluptatibus, rem.",
-        phrase:"Funil de vendas simples",
-        code: null,
-      },
-    ]
-  },
-  {
-    page: 'Documentação',
-    content:[
-      {
-        isCard: null,
-        icon: null,
-        head:"Documentação de API",
-        title: null,
-        subtitle: 'Estruture a aplicação para a documentação de sua API',
-        divisor: true,
-        paragraph:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium deserunt, dolorem quia sequi fuga modi libero voluptatem eaque dolore aperiam, nemo ab architecto labore ut non autem facilis! Voluptatibus, rem.",
-        phrase:"Funil de vendas simples",
-        code: null,
-      },
-    ]
-  }
+  // {
+  //   page: 'Wellcome',
+  //   content:[
+  //     {
+  //       isCard: null,
+  //       icon: null,
+  //       head:"Bem vindo ao Projeto",
+  //       title: null,
+  //       subtitle: null,
+  //       divisor: false,
+  //       paragraph:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium deserunt, dolorem quia sequi fuga modi libero voluptatem eaque dolore aperiam, nemo ab architecto labore ut non autem facilis! Voluptatibus, rem. \n\nLorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium deserunt, dolorem quia sequi fuga modi libero voluptatem eaque dolore aperiam, nemo ab architecto labore ut non autem facilis! Voluptatibus, rem.",
+  //       phrase:"Funil de vendas simples",
+  //       code: null,
+  //     },
+  //     {
+  //       isCard: null,
+  //       icon: null,
+  //       head:"OverView",
+  //       title:"Coloque seu título aqui",
+  //       divisor: false,
+  //       subtitle:"Veja como fica o paragrafo abaixo",
+  //       paragraph:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium deserunt, dolorem quia sequi fuga modi libero voluptatem eaque dolore aperiam, nemo ab architecto labore ut non autem facilis! Voluptatibus, rem.",
+  //       phrase:"Funil de vendas simples",
+  //       code: null,
+  //     },
+  //   ]
+  // },
+  // {
+  //   page: 'OverView',
+  //   content:[
+  //     {
+  //       isCard: null,
+  //       icon: null,
+  //       head:"OverView",
+  //       title:"Coloque seu título aqui",
+  //       divisor: false,
+  //       subtitle:"Veja como fica o paragrafo abaixo",
+  //       paragraph:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium deserunt, dolorem quia sequi fuga modi libero voluptatem eaque dolore aperiam, nemo ab architecto labore ut non autem facilis! Voluptatibus, rem.",
+  //       phrase:"Funil de vendas simples",
+  //       code: null,
+  //     },
+  //   ]
+  // },
+  // {
+  //   page: 'Documentação',
+  //   content:[
+  //     {
+  //       isCard: null,
+  //       icon: null,
+  //       head:"Documentação de API",
+  //       title: null,
+  //       subtitle: 'Estruture a aplicação para a documentação de sua API',
+  //       divisor: true,
+  //       paragraph:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium deserunt, dolorem quia sequi fuga modi libero voluptatem eaque dolore aperiam, nemo ab architecto labore ut non autem facilis! Voluptatibus, rem.",
+  //       phrase:"Funil de vendas simples",
+  //       code: null,
+  //     },
+  //   ]
+  // }
 ];
 
 

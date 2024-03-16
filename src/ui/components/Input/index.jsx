@@ -1,12 +1,12 @@
 import { Input, InputContainer } from "./InputStyle";
 import { BsSearch } from 'react-icons/bs'
 
-export function InputSearch(props){
+export function InputSearch({clicked}){
   return(
-    <InputContainer>
+    <InputContainer
+      onClick={() => clicked()}>
     <Input
       placeholder="Pesquise na aplicação"
-      value={props.InputValue}
     />
     <BsSearch/>
     </InputContainer>

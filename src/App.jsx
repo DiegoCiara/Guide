@@ -50,7 +50,7 @@ function App() {
                     <Route path={"/"} element={<Document contents={products[0]?.content}/>}/>
                   {/* <Route path='/home' element={<Home/>}/> */}
                   {/* <Route path='/APIdocument' element={}/> */}
-                  <Route path="*" element={<Home/>} />
+                  {/* <Route path="*" element={<Home/>} /> */}
                 </Routes>
             </Router>
           </Content>

@@ -7,6 +7,13 @@
   -webkit-text-size-adjust: 100%;  
   background-color: #ffffff;
   color: #11181C;
+  --brand-3: #ffffff;
+  --text-dark: #0e0e0e;
+  --text-typograph: #404040;
+  --text-light: #ffffff;
+  --gray: #595959;
+  --border-radius: 15px;
+  --button-radius: 12px;
 }
 body {
   margin: 0;
@@ -72,10 +79,209 @@ code {
   color: rgb(190, 190, 190);
 }
 
+.ModalStyled{
+  background-color: #747bff;
+  top: 50%;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+/* App.css */
+.modalOverlay {
+  background-color: rgb(124, 124, 124) !important; /* !important pode ser necessário para sobrescrever estilos padrões */
+  z-index: 90000 !important; /* Ajuste conforme necessário */
+}
+
+.ModalContainer{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50% !important; /* Ou o tamanho que preferir */
+  padding: 20px; /* Ajuste o padding conforme necessário */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* Adicione outros estilos que desejar */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  color: #11181C;
+  margin: 10px;
+  min-width: 50vw !important;
+  border-radius: 10px;
+  min-height: 85vh;
+}
+
+.CloseModal{
+  position: absolute;
+  top: 5px;
+  right: 0px;
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  opacity: 50%;
+  transition: .2s;
+  color: var(--gray);
+}
+
+.CloseModal:hover{
+  opacity: 100%;
+  cursor: pointer;
+}
+.input-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 95%;
+  gap: 4px;
+  align-items: center;
+}
+
+.input-container > label {
+  width: 100%;
+  text-align: left;
+  font-size: 12px;
+}
+
+input{
+  border: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding: 10px;
+  width: 100%;
+  transition: .3s;
+  color: #ffff;
+  background-color: var(--brand-3);
+  border: none;
+}
+
+input:focus{
+  outline: none;
+}
+
+
+.InputContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+
+.TextFieldStyled {
+  /* margin: 10px 0; */
+  /* min-width: 200px; */
+  background-color: var(--brandBlue);
+  border-color: var(--brandBlue);
+  color: var(--brandBlue)
+}
+
+.GlobalSearch{
+  font-family: 'Inter', sans-serif !important;
+}
+
+
+.search-container {
+  width: 600px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.search-container_input {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  border: 1.5px solid var(--brand-1);
+  border-radius: 5px;
+  background-color: var(--brand-3);
+  padding: 1rem;
+  font-size: 18px;
+  border: 1px solid var(--gray);
+  
+}
+
+#search-box {
+  width: 100%;
+  box-sizing: border-box;
+  display: block;
+  font-weight: bold;
+  height: 2.1875rem;
+  width: 100%;
+  border: 0;
+  border-radius: 8px;
+  outline: 0;
+  background-image: url('/icons/search.svg') !important;
+}
+
+.results {
+  list-style: none;
+  padding: 0 1rem;
+  margin: 0;
+  border: 1px solid #cccccc1c;
+  border-top: none;
+  position: absolute;
+  width: 100%;
+  z-index: 1000;
+  border-radius: 0px 0px 5px 5px;
+  overflow: auto;
+  max-height: 75vh;
+  top: 100%;
+}
+
+.results li {
+  padding: 10px;
+  border-top: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 30px;
+  cursor: pointer;
+}
+
+.results li img {
+  margin-right: 10px;
+  width: auto;
+  border-radius: 4px;
+  background-color: #5b5b5b;
+  height: 40px;
+}
+
+
+
+@media (max-width: 900px) {
+  .search-container {
+    width: 90%;
+  }
+  .ModalContainer{
+    width: 100%;
+    /* top: 35%; */
+    display: flex;
+    align-items: center;
+    padding: 50px 10px;
+    min-width: 95vw !important;
+    left: 48%;
+    min-height: 100%;
+  }
+  .CloseModal{
+    font-size: 25px;
+  }
+}
 @media (prefers-color-scheme: dark) {
   :root {
     color: #ffffff;
     background-color: #11181C;
+  }
+  .ModalContainer{
+    background-color: #11181C;
+  }
+  input{
+    color: #11181C;
   }
   a:hover {
     color: #747bff;

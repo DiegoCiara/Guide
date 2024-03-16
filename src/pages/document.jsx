@@ -4,22 +4,34 @@ import ProductService from "../services/ProductService";
 import { CardsContainer } from "../ui/components/CardsContainer";
 import { Contents } from "../ui/components/Contents";
 import { Divisor, Page, PageContainer } from "../ui/styles/Container";
+import Modal from "react-modal";
 
+Modal.setAppElement("#root");
 export function Document({ id }){
   const [sections, setSections] = useState([])
   const [loading, setLoading] = useState(false)
 
+  
   const getSelectedProduct = async () => {
-    setLoading(true)
+    setLoading(true);
     try {
       const data = await ProductService.getProduct(id);
-      setSections(data?.content)
-      setLoading(false)
+      const sortedContent = data?.content.sort((a, b) => {
+        // Convertendo strings de data em objetos Date para comparação
+        const dateA = new Date(a.createdAt);
+        const dateB = new Date(b.createdAt);
+        
+        // Ordenando do mais antigo para o mais recente
+        return dateA - dateB;
+      });
+      setSections(sortedContent);
     } catch (error) {
-      console.log(false)
-      setLoading(false)
+      console.error(error);
+    } finally {
+      setLoading(false);
     }
   };
+  
 
   useEffect(() => {
     getSelectedProduct();

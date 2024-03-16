@@ -15,6 +15,18 @@ class ProductService {
       return error;
     }
   }
+  async getSections() {
+    try {
+      const { data } = await api.get("/section?with=page");
+      console.log(data)
+      return data;
+    } catch (error) {
+      toast.error(
+        "Ops! algo deu errado, verifique sua conexão e tente novamente."
+      );
+      return error;
+    }
+  }
 
   async getProduct(id){
     try {
